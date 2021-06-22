@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Ikari Jogos</title>
+        <iframe width="100%" height="105px" src="cabecalho.html"></iframe>
+        <link rel="stylesheet" href="css/mystyle.css">
+        <link rel="icon" type="image/png" href="img/icon.png">
+    </head>
+    <body style="background-color:#93d574;">
+        <center>
+            <div class="imagens3">
+                <p><img src="img/heidern.png" alt="Imagem" height="200px" width="auto"></p>
+            </div>
+            <div class="nome">
+                <h1><font Size=+3>Ikari Jogos</font></h1>
+            </div></br>
+            <div class="break120"></div>
+            <center><p><img id="jogos" alt="Jogos" height="350px" width="auto"></p></center>
+            <h2>Ofertas em Destaque</h2>
+            <p id="data"></p>
+            <p>Promoções:</p>
+            <center><img src="img/promocoesprincipais.png" alt="Promoções" height="auto" width="auto"></center></br>
+            <div>
+                <div class="imagens">
+                    <a href="thekingoffighters.html" target="_blank"><img src="img/thekingoffighters.png" alt="The King of Fighters" height="auto" width="auto"></a>
+                </div>
+                <div class="imagens">
+                    <a href="devilmaycry.html" target="_blank"><img src="img/devilmaycry.png" alt="Devil May Cry" height="auto" width="auto"></a>
+                </div>
+                <div class="imagens">
+                    <a href="dragonquest.html" target="_blank"><img src="img/dragonquest.png" alt="Dragon Quest" height="auto" width="auto"></a>
+                </div>
+            </div>
+        </center>
+        <iframe width="100%" height="155px" src="rodape.html"></iframe>
+        <script>
+        var data = new Date();
+        document.getElementById("data").innerHTML = data.getDate() + "/" + (data.getMonth() + 1) + "/" + data.getFullYear();
+        var imagens = [];
+        imagens[0] = ['img/1kofxiv.jpeg'];
+        imagens[1] = ['img/2dmcv.jpeg'];
+        imagens[2] = ['img/3dqxi.jpeg'];
+        var imagemnumero = 0;
+        function change() {
+            document.getElementById("jogos").src = imagens[imagemnumero];
+            if (imagemnumero == 2) {
+                imagemnumero = 0;
+            } 
+            else {
+                imagemnumero++;
+            }
+            setTimeout(change, 5000);
+            }
+        window.onload = change();
+        </script>
+    </body>
+</html>

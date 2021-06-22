@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Quem Somos - Ikari Jogos</title>
+        <iframe width="100%" height="105px" src="cabecalho.html"></iframe>
+        <link rel="stylesheet" href="css/mystyle.css">
+        <link rel="icon" type="image/png" href="img/icon.png">
+    </head>
+    <body style="background-color:#93d574;">
+        <h1><font Size=+3>Quem somos</font></h1>
+        <div class="empresa">
+            <p><img src="img/ikari.jpg" alt="Quem Somos" height="200px" width="auto"></p>
+        </div>
+        <div class="empresa">
+            <p>Fundada em 1986, a Ikari Jogos tem como missão trazer jogos para todas as pessoas, com preços baratos e acessíveis.</p>
+        </div></br>
+        <div class="break110"></div>
+        <h1><font Size=+3>Fale conosco</font></h1>
+        <form>
+            <fieldset>
+                <div>
+                   <label for="cpf">CPF</label></br>
+                   <input type="text" name="cpf" id="cpf" required>
+                </div>
+                </br>
+                <div>
+                    <label for="nome">Nome completo</label></br>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                </br>
+                <div>
+                    <label for="email">E-mail</label></br>
+                    <input type="text" name="email" id="email" required>
+                </div>
+                </br>
+                <div>
+                    <label for="telefone">Telefone</label></br>
+                    <input type="text" name="telefone" id="telefone" required>
+                </div>
+                </br>
+                <div>
+                    <label>Assunto</label></br>
+                    <select id="assunto">
+                        <option selected disabled value="">Selecione</option>
+                        <option name="assunto1" value="Ajuda">Ajuda</option>
+                        <option name="assunto2" value="Sugestões">Sugestões</option>
+                        <option name="assunto3" value="Reclamações">Reclamações</option>
+                    </select>
+                </div>
+                <p><label>Mensagem</label><br></p>
+                <textarea cols="50" rows="5" name="mensagem" id="mensagem"></textarea></br>
+                </br>
+                <button type="button" onClick="resultado()">Enviar</button><br>
+            </fieldset>
+        </form></br>
+        <p id="cpfid"></p>
+        <p id="nomeid"></p>
+        <p id="emailid"></p>
+        <p id="telefoneid"></p>
+        <p id="assuntoid"></p>
+        <p id="mensagemid"></p>
+        <iframe width="100%" height="155px" src="rodape.html"></iframe>
+        <script>
+            function resultado(){
+                document.getElementById("cpfid").innerHTML = "CPF = " + document.getElementById("cpf").value;
+                document.getElementById("nomeid").innerHTML = "Nome = " + document.getElementById("nome").value;
+                document.getElementById("emailid").innerHTML = "E-mail = " + document.getElementById("email").value;
+                document.getElementById("telefoneid").innerHTML = "Telefone = " + document.getElementById("telefone").value;
+                document.getElementById("assuntoid").innerHTML = "Assunto = " + document.getElementById("assunto").value;
+                document.getElementById("mensagemid").innerHTML = "Mensagem = " + document.getElementById("mensagem").value;
+            }
+        </script>
+    </body>
+</html>
