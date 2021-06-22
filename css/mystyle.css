@@ -1,0 +1,32 @@
+.empresa {
+    float: left;
+    padding: 5px;
+}
+
+.break120 {
+    padding: 120px;
+}
+
+.break110 {
+    padding: 110px;
+}
+
+.imagens {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+}
+
+.imagens3 {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 5px;
+}
+
+.nome {
+    float: left;
+    padding: 65px;
+}
